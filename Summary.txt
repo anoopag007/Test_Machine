@@ -27,3 +27,7 @@ git config --global url."https://".insteadOf git://
 2.Remove any remote if any
 
 git remote rm origin
+
+git remote add origin https://github.com/anoopag007/Machine_Learning.git
+
+
