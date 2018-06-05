@@ -14,4 +14,16 @@ sudo -u git -H bundle exec rake gitlab:check RAILS_ENV=production
 git checkout -b test
 git push origin test:test
 
+https://github.com/anoopag007/Test_Machine
+
 anoopag007/Test_Machine
+
+git config --global url."https://".insteadOf git://
+
+1. Ran this command to tell my git to use https instead of ssh:
+
+git config --global url."https://".insteadOf git://
+
+2.Remove any remote if any
+
+git remote rm origin
