@@ -1,0 +1,13 @@
+curl "https://storage.googleapis.com/kaggle-competitions-data/kaggle/3316/Train.zip?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1528197472&Signature=GT73t"%"2FVqLLDTfWnJyJ80pRgVtSlIzbRU5FSMchoEphHsAYRKtn6dIX"%"2FxxxWtL7gOqpdMR4sc2ADaF"%"2BZd1JYo5GKExw6oquSmIfcUcUhA3ZjzSnej"%"2Ba2Vp3T55aZ45LOmDQpJBJ9Gtz92NNMCiYv4SHpRl6w"%"2FrAMnpxHugjxr"%"2BNnZ1B8Hzm4w0cJ3h8BAQyuYwR3CRFFARZ1Nj1dqugNSc55CFtKnVAeS9A1YWFqdWmRTB"%"2FEqct4G7ivZgLPv1xvQri2tEwOXEqwDI593XhhSuiMyY7GUWx9rvonVoVL0CgWpN"%"2Biav2HhvOJeaIqkaAcIp"%"2BqtkP6ik98K"%"2F"%"2FtkAUPC7A"%"3D"%"3D" -H "Host: storage.googleapis.com" -H "User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -H "Accept-Language: en-US,en;q=0.5" --compressed -H "Referer: https://www.kaggle.com/" -H "Connection: keep-alive" -H "Upgrade-Insecure-Requests: 1"
+
+
+
+cd fastai/courses/ml1/data/bulldozers/
+
+from pandimport pandas as pd
+import numpy as  np
+
+
+
+raw_data =pd.read_csv('Train.csv',low_memory=False,parse_dates=['saledate'])
+raw_data
