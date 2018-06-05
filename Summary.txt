@@ -1,0 +1,17 @@
+git config --global user.email "bob@example.com"
+git config user.email "bob@example.com"
+git commit --author "Bob <bob@example.com>"
+
+git init
+git add README.md
+git remote -v
+git commit -m "first commit"
+git remote add origin https://github.com/anoopag007/Machine_Learning.git
+git push -u origin master
+
+sudo -u git -H bundle exec rake gitlab:check RAILS_ENV=production
+
+git checkout -b test
+git push origin test:test
+
+anoopag007/Test_Machine
